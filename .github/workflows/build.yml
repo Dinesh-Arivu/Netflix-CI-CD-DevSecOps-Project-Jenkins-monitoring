@@ -41,7 +41,7 @@ jobs:
 
   deploy:
     needs: build-analyze-scan
-    runs-on: [aws-netflix]
+    runs-on: [netflixgithubaction]
     steps:
       - name: Pull the docker image
         run: docker pull dinesh1097/netflixgithubaction:latest
